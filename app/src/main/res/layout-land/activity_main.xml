@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/white"
+    tools:context=".Activities.WelcomeActivity">
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:text="MeetU"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/loginImage"
+        android:layout_width="126dp"
+        android:layout_height="79dp"
+        android:layout_below="@+id/banner"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/login" />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginImage"
+        android:layout_centerInParent="true"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_email"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_password"
+        android:layout_centerInParent="true"
+        android:text="Login"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/google_signIn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signIn"
+        android:layout_centerInParent="true"
+        android:elevation="8dp"
+        android:text="Sign In with Google"
+        android:textColor="#fff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="150dp"
+        android:text="Forgot Password?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/google_signIn"
+        />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/google_signIn"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="180dp"
+        android:text="Register"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddVideoActivity">
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Add a new video"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/banner"
+        android:layout_marginTop="20dp"
+        app:flow_horizontalBias="0.0"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <EditText
+        android:id="@+id/video_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="Add video title"
+        android:inputType="text"
+        app:layout_constraintVertical_bias="0.443"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_below="@id/videoView"/>
+
+    <Button
+        android:id="@+id/browseVideo"
+        android:layout_width="265dp"
+        android:layout_height="63dp"
+        android:text="Browse Video"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/video_title"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <Button
+        android:id="@+id/uploadVideo"
+        android:layout_width="265dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:text="Upload Video"
+        android:textSize="18sp"
+        android:layout_below="@id/browseVideo"
+        android:layout_centerInParent="true"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@color/purple_500"
+        app:itemTextColor="@color/purple_500"
+        app:menu="@menu/main_menu"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

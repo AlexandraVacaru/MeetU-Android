@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1014729535936",
+    "firebase_url": "https://meet-u-bc041-default-rtdb.firebaseio.com",
+    "project_id": "meet-u-bc041",
+    "storage_bucket": "meet-u-bc041.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014729535936:android:47b5e22fb5e25a71de1825",
+        "android_client_info": {
+          "package_name": "com.example.meetu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1014729535936-fk8t72gtnvkmg35kf99tubio94m9dg2o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.meetu",
+            "certificate_hash": "a6aa36dc26f7c8be6c131a429c1060937a144c5a"
+          }
+        },
+        {
+          "client_id": "1014729535936-j4rgkjbjf14h9hm8l450m18eh2npgm2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcGltlzRMQLXc1Nxt90_-iUFrtSyJTVIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1014729535936-2dnmd1omne7v177h9613ni58c50iee03.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
